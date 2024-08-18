@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Complaint Analyzer 
+
 
 ## Getting Started
+This is a complaint analyzer using AI summarization and categorization. Currently storing data to firestore database.  
+Future Improvements include editing the complaint status, include RAG pipeline etc.
 
-First, run the development server:
+## Demo Img
+![image](https://github.com/user-attachments/assets/c9a3bc06-75d8-46b9-a1a5-d5204a33ad38)
+  Home Screen  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/user-attachments/assets/137dcfd1-787f-4f2f-ab91-72ff21a207ea)
+  Analysis of the text message if it is a complaint!
+  
+![image](https://github.com/user-attachments/assets/6504a671-3f1f-456c-8d4d-1548077cf219)
+  Not a complaint!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+1. Use Llama Model and OpenRouter API for config.
+2. Firebase Firestore Database for data storage.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Dependencies
+1. openai
+2. firebase
+3. mui
+4. uuid
+5. roboto font from mui
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## FootNote: 
++ Backend: A Ruby on Rails server that handles API requests, processes consumer complaints, and interfaces with the AI model.
++ Database: PostgreSQL to store complaint data and category tags, with a separate vector database for RAG pipeline.
++ AI Integration: Use an LLM API to categorize complaints and generate summaries.
++ RAG Pipeline: Implement a pipeline that stores complaint vectors in a vector database, enabling quick retrieval of related complaints.
++ Deployment: Basic setup with a focus on AI functionality, ensuring the system can handle increased data loads for more complex use cases.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
