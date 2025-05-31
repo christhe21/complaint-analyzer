@@ -5,7 +5,7 @@
 This is a complaint analyzer using AI summarization and categorization. Currently storing data to firestore database.  
 Future Improvements include editing the complaint status, include RAG pipeline etc.
 
-## Demo Img
+## Demo Images
 ![image](https://github.com/user-attachments/assets/c9a3bc06-75d8-46b9-a1a5-d5204a33ad38)
   Home Screen  
 
@@ -20,7 +20,7 @@ Future Improvements include editing the complaint status, include RAG pipeline e
 2. Firebase Firestore Database for data storage.
 
 ## Dependencies
-1. openai
+1. openai library
 2. firebase
 3. mui
 4. uuid
