@@ -26,7 +26,7 @@ Future Improvements include editing the complaint status, include RAG pipeline e
 4. uuid
 5. roboto font from mui
 
-## FootNote: 
+## Future Work: 
 + Backend: A Ruby on Rails server that handles API requests, processes consumer complaints, and interfaces with the AI model.
 + Database: PostgreSQL to store complaint data and category tags, with a separate vector database for RAG pipeline.
 + AI Integration: Use an LLM API to categorize complaints and generate summaries.
